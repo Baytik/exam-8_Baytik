@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component, Fragment} from 'react';
 import './App.css';
+import Container from "reactstrap/es/Container";
+import Header from "./Components/Header/Header";
+import {Route, Switch} from "react-router-dom";
+import Quotes from "./Containers/Quotes/Quotes";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render() {
+    return(
+        <Fragment>
+        <Container>
+            <Header/>
+            <Switch>
+                <Route path="/" exact component={Quotes}/>
+                <Route path="/quotes/new"/>
+                <Route render={() => <h1>Not found</h1>}/>
+            </Switch>
+        </Container>
+        </Fragment>
+    )
+  }
 }
 
 export default App;
