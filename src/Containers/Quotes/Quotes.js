@@ -57,7 +57,7 @@ class Quotes extends Component {
                         <CardBody>
                             <CardTitle>{this.state.quotes[id].author}</CardTitle>
                             <Button tag={Link} to={"/quotes/" + id}>Editor</Button>
-                            <Button color="danger" onClick={() => this.removeQuote(id)}>Delete</Button>
+                            <Button tag={Link} color="danger" onClick={() => this.removeQuote(id)}>Delete</Button>
                         </CardBody>
                     </Card>
                 ))}

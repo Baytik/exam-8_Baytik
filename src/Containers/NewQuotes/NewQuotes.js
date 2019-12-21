@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {Button, Form, FormGroup, Input, Label} from "reactstrap";
 import axiosAPI from "../../axiosAPI";
 import {CATEGORIES} from "../../category";
 import Spinner from "../../Components/UI/Spinner/Spinner";
+import {Button, Form, FormGroup, Input, Label} from "reactstrap";
 
 class NewQuotes extends Component {
 

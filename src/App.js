@@ -2,10 +2,10 @@ import React, {Component, Fragment} from 'react';
 import './App.css';
 import Container from "reactstrap/es/Container";
 import Header from "./Components/Header/Header";
-import {Route, Switch} from "react-router-dom";
 import Quotes from "./Containers/Quotes/Quotes";
 import NewQuotes from "./Containers/NewQuotes/NewQuotes";
 import EditQuote from "./Containers/EditQuote/EditQuote";
+import {Route, Switch} from "react-router-dom";
 
 class App extends Component{
   render() {
