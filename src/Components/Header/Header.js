@@ -1,6 +1,6 @@
 import React from 'react';
-import {Nav, Navbar, NavbarBrand, NavItem, NavLink} from "reactstrap";
 import {NavLink as RouterNavLink} from "react-router-dom";
+import {Nav, Navbar, NavbarBrand, NavItem, NavLink} from "reactstrap";
 
 const Header = () => {
     return (
