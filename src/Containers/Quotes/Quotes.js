@@ -54,6 +54,7 @@ class Quotes extends Component {
                 <Col xs={9}>
                 {Object.keys(this.state.quotes).map(id => (
                     <Card key={id}>
+                        <h2>{this.props.match.params.name}</h2>
                         <CardBody>
                             <CardTitle>{this.state.quotes[id].author}</CardTitle>
                             <Button tag={Link} to={"/quotes/" + id}>Editor</Button>
